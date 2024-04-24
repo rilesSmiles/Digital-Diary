@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smiley Studio</title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Share your memories!</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../yearbook/index.html">Characters</a></li>
+                <li><a href="../memories/index.html">Memory Log</a></li>
+                <li><a href="../photoalbum/index.html">Photo album</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="memoryForm">
+            <label for="memory">Share your memory:</label><br>
+            <textarea id="memory" name="memory" rows="4" cols="50" required></textarea><br>
+            <label for="image">Upload an image:</label><br>
+            <input type="file" id="image" name="image" accept="image/*" class="choose-file"><br>
+            <input type="submit" value="Submit" class="button">
+        </form>
+        <div id="cards-gallery">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digital Diary. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
