@@ -266,6 +266,19 @@ input[type="submit"]:hover {
   }
 }
 
+ .photo{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800rem; 
+    margin: 0 auto; 
+  }
+
+  .carousel-pic img {
+    width: 75%;
+    height: auto;
+    margin: 10em;
+}
 
 footer{
   background-color: #ee7457;
