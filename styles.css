@@ -164,6 +164,7 @@ section{
   display: grid;
   grid-template-columns: 33% 33% 33%;
   background-color: #1e1e1e;
+  padding-left: 5em;
 }
 .team-member{
   border-radius: 1.5em;
@@ -231,6 +232,7 @@ input[type="submit"]:hover {
   display: grid;
   grid-template-columns: 33% 33% 33% ;
   padding: 1em;
+  padding-left: 5em;
 }
 .card img {
   max-width: 100%;
@@ -255,10 +257,12 @@ input[type="submit"]:hover {
   .cards-gallery{
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-left: 3em;
   }
   #cards-gallery{
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-left: 1em;
   }
 }
 
