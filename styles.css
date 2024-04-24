@@ -14,6 +14,7 @@ h2{
   font-weight: 900;
   font-style: bold;
   font-size: 2rem;
+  padding-left: .5em
 }
 
 h3{
@@ -73,7 +74,10 @@ label{
 /*header*/
 header{
   background-color: #1e1e1e;
-  padding-left: 1em
+  padding-left: 1em;
+  border-bottom: 1em;
+  border-bottom-style:ridge;
+  border-color: #ee7457;
 }
 
 /*nav styling*/
@@ -128,7 +132,8 @@ section{
   overflow: hidden;
   width: 100%;
   max-width: 800rem; 
-  margin: 0 auto; }
+  margin: 0 auto; 
+}
 
 .carousel-slide {
   display: none;
@@ -256,48 +261,6 @@ input[type="submit"]:hover {
     grid-template-columns: 50% 50%;
   }
 }
-
-/*carousel*/
-.carousel {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.carousel-inner {
-  display: flex;
-}
-
-.carousel-inner img {
-  width: 100%;
-  display: none;
-}
-
-.carousel-inner img.active {
-  display: block;
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 1;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
 
 
 footer{
