@@ -59,17 +59,6 @@ p{
   padding-bottom: 1em
 }
 
-.Services{
-  color: #1e1e1e;
-  font-family: "Didact Gothic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-  background-color: #ee7457;
-  padding: .7em;
-  border-radius: 2em;
-  position: relative;
-}
 
 label{
   color: #f3e4d0;
@@ -134,22 +123,7 @@ section{
 }
 
 /* hero section*/
-.hero-carousel {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 800em; 
-  margin: 0 auto;
-}
 
-.carousel-slide {
-  display: none;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: auto;
-}
 
 
 .team-member {
@@ -269,37 +243,7 @@ input[type="submit"]:hover {
 }
 
 /*carousel*/
-.carousel {
-  position: fixed;
-}
 
-.carousel-inner {
-  display: flex;
-}
-
-.carousel-inner img {
-  display: none;
-  width: 100%;
-}
-
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
 
 
 footer{
