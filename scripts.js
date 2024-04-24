@@ -31,22 +31,47 @@ document.getElementById("memoryForm").addEventListener("submit", function(event)
     if (image) {
         imageUrl = URL.createObjectURL(image);
     }
+    var memoryObject = {
+        text: memory,
+        imageUrl: imageUrl
+    };
 
-    var card = document.createElement("div");
-    card.className = "team-member";
-    
-    var memoryText = document.createElement("p");
-    memoryText.textContent = memory;
-    card.appendChild(memoryText);
-    
-    if (imageUrl) {
-        var img = document.createElement("img");
-        img.src = imageUrl;
-        card.appendChild(img);
-    }
+    saveMemory(memoryObject);
+
+    var card = createMemoryCard(memoryObject);
 
     document.getElementById("cards-gallery").appendChild(card);
 
     document.getElementById("memory").value = "";
     document.getElementById("image").value = "";
+});
+
+function saveMemory(memoryObject) {
+    var memories = JSON.parse(localStorage.getItem("memories")) || [];
+    memories.push(memoryObject);
+    localStorage.setItem("memories", JSON.stringify(memories));
+}
+function createMemoryCard(memoryObject) {
+    var card = document.createElement("div");
+    card.className = "team-member";
+    
+    var memoryText = document.createElement("p");
+    memoryText.textContent = memoryObject.text;
+    card.appendChild(memoryText);
+
+    if (memoryObject.imageUrl) {
+        var img = document.createElement("img");
+        img.src = memoryObject.imageUrl;
+        card.appendChild(img);
+    }
+
+    return card;
+}
+
+window.addEventListener("load", function() {
+    var memories = JSON.parse(localStorage.getItem("memories")) || [];
+    memories.forEach(function(memoryObject) {
+        var card = createMemoryCard(memoryObject);
+        document.getElementById("memoryContainer").appendChild(card);
+    });
 });

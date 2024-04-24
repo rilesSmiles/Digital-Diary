@@ -258,6 +258,45 @@ input[type="submit"]:hover {
 }
 
 /*carousel*/
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-inner img {
+  width: 100%;
+  display: none;
+}
+
+.carousel-inner img.active {
+  display: block;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
 
 
 
