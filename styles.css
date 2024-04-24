@@ -123,6 +123,21 @@ section{
 }
 
 /* hero section*/
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800rem; 
+  margin: 0 auto; }
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
 
 
 
